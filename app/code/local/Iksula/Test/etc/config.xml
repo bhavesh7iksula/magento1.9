@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Iksula_Test>
+            <version>0.1.0</version>    <!-- Version of module -->
+        </Iksula_Test>
+    </modules>
+    <frontend>
+        <routers>
+            <test>
+                <use>standard</use>
+                <args>
+                    <module>Iksula_Test</module>
+                    <frontName>test</frontName>  <!-- This is the URL
+ of the module. i.e www.yourmagento.com/index.php/test will be the url of your module. -->
+                </args>
+            </test>
+        </routers>
+        <layout>  <!-- New Section Added -->
+            <updates>
+                <test>
+                    <file>test.xml</file> <!-- This is name of the layout file for this module -->
+                </test>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <blocks>
+            <test>
+                <class>Iksula_Test_Block</class>   <!-- Path of the
+ Block Folder, where all php files are located related to view -->
+             </test>
+        </blocks>
+        <helpers>
+            <test>
+                <class>Iksula_Test_Helper</class>  
+<!-- Path of Helper Files -->
+            </test>
+        </helpers>
+    </global>  
+</config>
