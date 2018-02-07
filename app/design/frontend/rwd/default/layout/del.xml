@@ -8,11 +8,11 @@
     	</reference>
     </default>	
 
-    <test_index_index>
+    <del_index_index>
         <reference name="content">
-            <block type="test/test" name="test" template="test/test.phtml" />
+            <block type="del/del" name="test" template="test/test.phtml" />
         </reference>
-    </test_index_index>
+    </del_index_index>
 
      
 </layout>

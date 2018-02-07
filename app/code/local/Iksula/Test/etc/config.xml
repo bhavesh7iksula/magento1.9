@@ -5,6 +5,7 @@
             <version>0.1.0</version>    <!-- Version of module -->
         </Iksula_Test>
     </modules>
+
     <frontend>
         <routers>
             <test>

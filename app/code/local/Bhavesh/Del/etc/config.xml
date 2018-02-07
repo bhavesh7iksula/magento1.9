@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Bhavesh_Del>
+            <version>0.1.0</version>    <!-- Version of module -->
+        </Bhavesh_Del>
+    </modules>
+    <admin>
+        <routers>
+            <del>
+                <use>admin</use>
+                <args>
+                    <module>Bhavesh_Del</module>
+                    <frontName>adminhelloworld</frontName>  <!-- This is the URL
+ of the module. i.e www.yourmagento.com/index.php/test will be the url of your module. -->
+                </args>
+            </del>
+        </routers>
+    
+    </admin>
+      
+    <global>
+        
+        <helpers>
+            <del>
+                <class>Bhavesh_Del_Helper</class>  
+<!-- Path of Helper Files -->
+            </del>
+        </helpers>
+    </global>  
+</config>

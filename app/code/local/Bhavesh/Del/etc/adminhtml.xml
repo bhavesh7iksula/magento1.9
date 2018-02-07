@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+        <menu>
+            <tutorial_menu translate="title" module="del">
+                <title>Tutorial Menu</title> 
+                <sort_order>90999</sort_order>
+                <children>
+                    <first_page module="del">
+                        <title>Our First Page</title> 
+                        <action>del/index/index</action>
+                        <sort_order>90</sort_order>
+                    </first_page>
+                    <second_page module="del">
+                        <title>Our second Page</title> 
+                        <action>del/index/sec</action>
+                        <sort_order>40</sort_order>
+                    </second_page>
+                </children>
+            </tutorial_menu>
+             <cms>
+                <children>
+                    <another_menu_from_us>
+                        <title>Here Too!</title> 
+                        <action>del/index/index</action>
+                    </another_menu_from_us>
+                </children>
+            </cms>
+        </menu>    
+</config>
