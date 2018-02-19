@@ -183,7 +183,7 @@
 ############################################
 ## rewrite everything else to index.php
 
-    #RewriteRule .* index.php [L]
+    RewriteRule .* index.php [L]
 
 </IfModule>
 

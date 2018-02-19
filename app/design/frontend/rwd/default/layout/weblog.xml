@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+	<default>
+		<reference name="root">
+        	<action method="setTemplate"><template>page/1column.phtml</template>
+        	</action>
+    	</reference>
+    </default>	
+
+    <weblog_index_index>
+        <reference name="content">
+            <block type="core/template" name="weblog" template="weblog/count.phtml" />
+        </reference>
+    </weblog_index_index>
+
+    <weblog_index_show>
+        <reference name="content">
+            <block type="weblog/weblog" name="weblog" template="weblog/persondata.phtml" />
+        </reference>
+    </weblog_index_show>
+
+    <weblog_index_edit>
+        <reference name="content">
+            <block type="weblog/weblog" name="weblog" template="weblog/weblog.phtml" />
+        </reference>
+    </weblog_index_edit>
+
+ <catalog_product_view>
+
+<reference name="product.info.extrahint">
+
+<block type="core/template" as="moduleAs" template="weblog/count.phtml" />
+
+</reference>
+
+</catalog_product_view>
+</layout>

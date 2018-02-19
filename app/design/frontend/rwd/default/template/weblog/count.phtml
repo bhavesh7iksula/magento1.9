@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p{
+  
+  font-size: 30px;
+  margin-top:0px;
+}
+</style>
+</head>
+
+ <p id="demo"></p>
+    <h3 id=saleend>Sale Ending Soon</h3>
+
+<script>
+ function getTimer(start11,end11)
+    {
+// Set the date we're counting down to
+var countDownDate = new Date(end11).getTime();
+//console.log(countDownDate);
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    //time calculation for no of days remaining
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    
+
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "sale ended";
+        }
+    }, 1000);
+
+    }
+</script>
+<?php 
+$product = Mage::registry('current_product');
+    $id = $product->getId();
+    $sku = $product->getSku();
+
+    echo $id."<br>";
+    echo $sku."<br>";
+     
+    $start = $end = "";
+     $_products = Mage::getModel('catalog/product')->getCollection()->addAttributeToSelect('*');
+     
+     foreach ($_products as $product){
+    if($sku === $product->getData('sku')){
+        $sale = $product->getData('sale');
+        //echo $sale."<br>";
+        if($sale == true){
+         echo  $start_date = $product->getData('start_date');
+           echo $end_date = $product->getData('end_date'); 
+?>
+ 
+  <script type="text/javascript">// <![CDATA[
+        var start11 = '<?php echo $start_date ; ?>';
+        var end11 = '<?php echo $end_date ; ?>';
+        //var ss = "hello";
+        console.log(start11);
+
+        function getStartDate(start11){
+         // Set the date we're counting down to
+        var countDownDate = new Date(start11).getTime();
+        //console.log(countDownDate);
+            // Get todays date and time
+            var now = new Date().getTime();
+            
+            // Find the distance between now an the count down date
+            var distance = countDownDate - now;
+            //time calculation for no of days remaining
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            //Output no of days left to sale
+            console.log(days);
+           // Output the result in an element with id="demo"
+           if(distance > 0){
+            document.getElementById("demo").innerHTML = days + " Days To Go For Sale";
+            document.getElementById("saleend").style.display = "none";
+           }
+           else{
+            getTimer(start11,end11);
+        }
+        
+
+        }
+        getStartDate(start11);
+        
+
+        // ]]></script>
+    
+    
+<?php 
+        }
+
+        else{
+
+            echo "<h3>Product Not Under Sale<h3>";
+        }
+     }
+   }
+  
+ ?>
+
+
+

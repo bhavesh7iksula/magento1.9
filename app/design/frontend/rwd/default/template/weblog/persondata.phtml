@@ -1,0 +1,49 @@
+
+
+
+<head><style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+.button{
+  background-color: red;
+
+}
+</style>
+</head>
+<body>
+<table>
+  <tr>
+    <th><h3>Name</h3></th>
+    <th><h3>Birthday</h3></th>
+    <th><h3>Address</h3></th>
+    <th><h3>Gender</h3></th>
+    <th><h3>Delete</h3></th>
+
+  </tr>
+<?php 
+
+	$show_data =  $this->showData();
+
+	foreach($show_data as $blogpost){
+?>
+
+  <tr>
+    <td><?php echo '<h4>'.$blogpost->getName().'</h4>';?></td>
+    <td><?php echo '<h4>'.$blogpost->getBirthday().'</h4>';?></td>
+    <td><?php echo '<h4>'.$blogpost->getAddress().'</h4>';?></td>
+    <td><?php echo '<h4>'.$blogpost->getGender().'</h4>';?></td>
+    <td><button class="button" title="Delete" onclick ="setLocation('{$this->getUrl('weblog/index/delete')}')"><span><span><?php echo $this->__('Delete')?></span></span></button></td>
+  </tr>		
+
+    <?php } ?>
+    </table>
+</body>

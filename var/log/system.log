@@ -6,3 +6,34 @@
 [5] /var/www/html/magento19/app/Mage.php:683
 [6] /var/www/html/magento19/index.php:83
 </pre>
+2018-02-14T07:21:44+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-14T09:50:43+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-14T09:51:01+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-14T09:52:21+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-14T09:53:25+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-14T09:54:36+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-14T09:55:32+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-14T09:55:59+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-14T09:56:01+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-14T09:56:01+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-14T09:56:17+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-14T09:56:31+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-14T09:56:32+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-14T09:56:34+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-14T09:56:51+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-14T09:57:06+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-14T10:12:26+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-14T13:11:27+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-15T07:33:40+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-15T07:33:41+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-15T07:34:45+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-15T07:36:26+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-15T07:36:27+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-15T07:36:27+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-15T07:36:27+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-15T07:36:27+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-15T07:36:28+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-15T07:38:42+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-16T11:24:28+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-19T06:15:57+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.
+2018-02-19T06:18:49+00:00 DEBUG (7): Security problem: &rdquo;cms/block&rdquo; has not been whitelisted.

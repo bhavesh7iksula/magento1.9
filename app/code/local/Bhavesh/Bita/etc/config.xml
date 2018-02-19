@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Bhavesh_Bita>
+			<version>0.1.0</version>
+		</Bhavesh_Bita>
+	</modules>
+	<frontend>
+		<routers>
+			<bita>
+				<use>standard</use>
+				<args>
+                    <module>Bhavesh_Bita</module>
+                    <frontName>bita</frontName>  <!-- This is the URL
+ of the module. i.e www.yourmagento.com/index.php/test will be the url of your module. -->
+                </args>
+			</bita>
+		</routers>
+		<layout>  <!-- New Section Added -->
+            <updates>
+                <bita>
+                    <file>bita.xml</file> <!-- This is name of the layout file for this module -->
+                </bita>
+            </updates>
+        </layout>
+	</frontend>
+</config>

@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Iksula_Weblog>
-            <version>0.1.0</version>    <!-- Version of module -->
+            <version>1.0.0</version>    <!-- Version of module -->
         </Iksula_Weblog>
     </modules>
 
@@ -16,10 +16,23 @@
             </args>
         </weblog>
     </routers>
+     <layout>  <!-- New Section Added -->
+            <updates>
+                <weblog>
+                    <file>weblog.xml</file> <!-- This is name of the layout file for this module -->
+                </weblog>
+            </updates>
+        </layout>
 </frontend>
 
 <global>
     <!-- ... -->
+     <blocks>
+            <weblog>
+                <class>Iksula_Weblog_Block</class>   <!-- Path of the
+ Block Folder, where all php files are located related to view -->
+             </weblog>
+        </blocks>
     <models>
         <weblog>
             <class>Iksula_Weblog_Model</class>
@@ -34,12 +47,46 @@
             <class>Iksula_Weblog_Model_Resource</class>
             <entities>
                 <blogpost>
-                    <table>blog_posts</table>
+                    <table>person</table>
                 </blogpost>
             </entities>
         </weblog_resource>
     </models>
-    <!-- ... -->
+    <helpers>
+            <weblog>
+                <class>Iksula_Weblog_Helper</class>
+            </weblog>
+        </helpers>
+     <resources>
+        <weblog_setup>
+            <setup>
+                <module>Iksula_Weblog</module>
+                <class>Iksula_Weblog_Model_Resource_Setup</class>
+            </setup>
+        </weblog_setup>
+    </resources>
 </global>
+<adminhtml>
+    <acl>
+            <resources>
+                <admin>  <!--This is acl based on URL. If you see URL it would be /admin/system_config/ -->
+                    <children>
+                        <system>
+                            <children>
+                                         <config>
+                                                  <children>
+                                            <testsection translate="title" module="weblog">  <!-- This is name of the section created by us -->
+                                                <title>Test Section ACL</title>  <!-- Title as shown in User->Roles->Permissions Window -->
+                                                <sort_order>99</sort_order>
+                                            </testsection>
+                                        </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+</adminhtml>
 
 </config>
